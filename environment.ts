@@ -3,7 +3,7 @@ import path from "path";
 import * as fs from "fs";
 import EnvException from "./src/exceptions/EnvException";
 import FileNotFoundException from "./src/exceptions/FileNotFoundException";
-import { StackToSingleLine } from "./src/util/StackToSingleLine";
+import { StackToSingleLine } from "./src/utils/StackToSingleLine";
 
 const envFile = `${path.resolve(__dirname)}/.env`;
 
