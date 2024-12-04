@@ -63,11 +63,11 @@ export async function execute(interaction: ButtonInteraction): Promise<void> {
       collector?.on("collect", async i => {
         if (i.customId === "confirm-existing-yes") {
           // Show modal with only reason field
-          const modal = getExistingUserModal(roleId);
+          const modal = getExistingUserModal();
           await i.showModal(modal);
         } else {
           // Show full modal
-          const modal = getFullApplicationModal(roleId);
+          const modal = getFullApplicationModal();
           await i.showModal(modal);
         }
       });
@@ -83,7 +83,7 @@ export async function execute(interaction: ButtonInteraction): Promise<void> {
       });
     } else {
       // No existing user, show full modal
-      const modal = getFullApplicationModal(roleId);
+      const modal = getFullApplicationModal();
       await interaction.showModal(modal);
     }
   } catch (error) {
