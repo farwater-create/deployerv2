@@ -3,7 +3,7 @@ import fetch from "cross-fetch";
 import "dotenv/config";
 
 const httpLink = createHttpLink({
-  uri: "http://localhost:4000/graphql",
+  uri: `${process.env.API_URL}/graphql`,
   fetch,
   headers: {
     Authorization: `Bearer ${process.env.API_SECRET}`,
