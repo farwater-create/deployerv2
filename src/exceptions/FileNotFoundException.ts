@@ -1,5 +1,5 @@
-import SanitizePath from "../util/CensorPath";
-import { StackToSingleLine } from "../util/StackToSingleLine";
+import SanitizePath from "../utils/CensorPath";
+import { StackToSingleLine } from "../utils/StackToSingleLine";
 import Exception from "./Exception";
 import * as fs from "fs";
 
